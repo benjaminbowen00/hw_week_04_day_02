@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  background-color: #1E90FF;
+  align-content: center;
+  border: 1px solid black;
+  width: 580px;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+header div{
+  padding-left: 100px;
+}
+
+nav {
+  font-size: 30px;
+  display: inline;
+  padding: 0px 0px;
+  border: 1px solid black;
+  align-content: center;
+  padding-top: 18px;
+}
+
+
+body {
+  background-color: #d4c3dd;
+  }
+
+body img{
+  max-width: 500px ;
+  height:auto;
+  border: 5px solid black;
+  margin-left: 0px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}

@@ -2,15 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Rock, Paper, Scissors</title>
     <link rel='stylesheet' href='/style.css'>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-      </ul>
-    </nav>
-    <%= yield %>
+    <header>
+      <nav class="home">
+        <a href="/">Home</a>
+      </nav>
+      <div class="header-title">
+        <h1> Rock Paper Scissors </h1>
+      </div>
+    </header>
+
+    <div>
+      <%= yield %>
+    </div>
+    <div>
+    <img src="../images/japanese_rock_paper_scissors.jpg" alt="Japanese variant of rock paper scissors from 1774">
+  </div>
   </body>
 </html>
