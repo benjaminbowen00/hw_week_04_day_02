@@ -1,3 +1,5 @@
+require 'pry'
+
 class Game
   def initialize(inp1, inp2)
     @inp1 = inp1.downcase
@@ -9,5 +11,6 @@ class Game
     return "Rock wins" if arr == ["rock", "scissors"]
     return "Paper wins" if arr == ["paper", "rock"]
     return "Scissors wins" if arr == ["paper", "scissors"]
+    return "It's a draw" if arr[0] == arr[1]
   end
 end

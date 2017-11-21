@@ -12,6 +12,8 @@ class TestGame < MiniTest::Test
     @game4= Game.new("rock", "paper")
     @game5= Game.new("paper", "scissors")
     @game6= Game.new("paper", "rock")
+    @game7= Game.new("rock", "rock")
+    @game8= Game.new("paper", "paper")
   end
 
   def test_scissors_loses_vs_rock
@@ -38,5 +40,12 @@ class TestGame < MiniTest::Test
     assert_equal("Paper wins", @game6.result)
   end
 
+  def test_draw
+    assert_equal("It's a draw", @game7.result)
+  end
+
+  def test_draw_paper
+    assert_equal("It's a draw", @game8.result)
+  end
 
 end
